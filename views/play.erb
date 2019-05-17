@@ -1,9 +1,10 @@
-<%= @player_1_name %> vs. <%= @player_2_name %>
+<%= @game.player_1.name %> vs. <%= @game.player_2.name %>
 <p>
-<%= @player_2_name%>: <%= Player::HP %>HP
+<%= @game.player_2.name%>: <%= Player::HP %>HP
 </p>
-<form action="/attack" method="post">
-    <input type="submit" value="Attack">
+<form action="/player_1_attack" method="post">
+    <input type="submit" value="Player_1 Attack">
 </form>
+
 
 
